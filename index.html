@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Dreamweaver</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        /* Centrar la imagen de Walmart */
+        .walmart-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .walmart-image-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        /* Sección dividida en dos */
+        .section-divided {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        /* Primera columna (imagen) */
+        .image-box {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Segunda columna (opciones) */
+        .options-box {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .options-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options-box ul li {
+            margin: 10px 0;
+        }
+
+        /* Estilo de los botones */
+        .button-container a button {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button-container a button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Rejilla de 5 columnas y 2 filas */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .grid div {
+            background-color: #eaeaea;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Rejilla para las imágenes en la segunda fila */
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .image-row img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        /* Fila final */
+        .footer-row {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagen de Walmart centrada -->
+        <div class="walmart-image-container">
+            <img src="imagenes/logo.jpg" alt="Logo Walmart">
+        </div>
+
+        <!-- Sección dividida en dos -->
+        <div class="section-divided">
+            <!-- Columna de imagen -->
+            <div class="image-box">
+                <img src="imagenes/ofertas.jpg" alt="Ofertas">
+            </div>
+            <!-- Columna de opciones -->
+            <div class="options-box">
+                <ul>
+                    <li class="button-container">
+                        <a href="PRODUCTO.html"><button>Productos</button></a>
+                    </li>
+                    <li class="button-container">
+                        <a href="sucursales.html"><button>Sucursales</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5 columnas de texto (Primera fila) -->
+        <div class="grid">
+            <div>ELECTRODOMÉSTICOS</div>
+            <div>REGALOS</div>
+            <div>ROPA</div>
+            <div>CARROS</div>
+            <div>MUEBLES</div>
+        </div>
+
+        <!-- 5 imágenes en la segunda fila -->
+        <div class="image-row">
+            <img src="imagenes/micro.jpg" alt="Microondas">
+            <img src="imagenes/regalo.jpg" alt="Regalo">
+            <img src="imagenes/ropa.jpg" alt="Ropa">
+            <img src="imagenes/OIP.jpg" alt="Carro">
+            <img src="imagenes/ropero.jpg" alt="Ropero">
+        </div>
+
+        <!-- Fila final -->
+        <div class="footer-row">
+            <p>© LEONARDO VELASCO VICTORIA 502</p>
+        </div>
+    </div>
+
+</body>
+</html>
