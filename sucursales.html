@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCURSALES JIJIJA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #9CC;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .row img {
+            margin: 5px;
+        }
+        .two-images img:first-child {
+            width: 300px;
+        }
+        .two-images img:last-child {
+            width: 150px;
+        }
+        .horizontal-image img {
+            width: 100%;
+            max-width: 600px;
+        }
+        .columns {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+        }
+        .columns > div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            flex: 1;
+        }
+        .columns .nested {
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+        }
+        .columns .nested .row {
+            display: flex;
+            justify-content: space-around;
+        }
+        .columns .nested .row img {
+            width: 60px;
+            height: 60px;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button-container button:hover {
+            background-color: #004c99;
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen principal -->
+    <div class="row"><img src="img2/untitled/sucursales.jpg" width="469" height="135"></div>
+
+    <!-- Botón principal -->
+    <div class="button-container">
+        <a href="index.html"><button>Principal</button></a>
+    </div>
+
+    <!-- Dos imágenes -->
+    <div class="row two-images">
+        <a href="https://www.bing.com/search?q=Walmat+ubicacion&FORM=HDRSC1" target="_blank">
+            <img src="img2/untitled/walmart.jpg" width="64" height="102">
+        </a>
+        <img src="img2/untitled/ubicacion.jpg" width="202" height="150">
+    </div>
+
+    <!-- Imagen horizontal -->
+    <div class="row horizontal-image"><img src="img2/untitled/paqueteria.jpg" width="83%" height="77"></div>
+
+    <!-- Sección de columnas -->
+    <div class="columns">
+        <!-- Columna 1 -->
+        <div>como tu quieras con el metodo de pago que mejor prefieras</div>
+
+        <!-- Columna 2 -->
+        <div class="nested">
+            <div>programas de anticipos de pagos</div>
+            <div class="row"><img src="img2/untitled/pagos.jpg" width="261" height="180"></div>
+            <div>provedores de construccion y servicio</div>
+            <div class="row"><img src="img2/untitled/provedores.jpg" width="296" height="180"></div>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="nested">
+            <div>centro de distribucion de provedores</div>
+            <div class="row"><img src="img2/untitled/distribucion.jpg" width="294" height="180"></div>
+            <div>pagos y facturas</div>
+            <div class="row"><img src="img2/untitled/facturas.jpg" width="234" height="180"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .buttons-row button, .separate-buttons button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons-row button:hover, .separate-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        .content-row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, auto);
+            gap: 10px;
+        }
+
+        .content-row .column {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .content-row .column img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .image-box {
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 300px;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Imagen principal -->
+    <div class="container"><img src="imagenes/WhatsApp Image 2024-12-05 at 11.10.06 PM.jpeg" width="1328" height="263"></div>
+
+    <!-- Botones separados -->
+    <div class="container separate-buttons row">
+        <button onclick="location.href='index.html'">Principal</button>
+        <button onclick="location.href='sucursales.html'">Sucursales</button>
+    </div>
+
+    <!-- Fila con otros botones -->
+    <div class="container buttons-row row">
+        <button>casa</button>
+        <button>limpieza</button>
+        <button>belleza</button>
+    </div>
+
+    <!-- 30 columnas con 6 filas -->
+    <div class="container content-row">
+        <!-- Fila 1 -->
+        <div class="column">silla</div>
+        <div class="column"><img src="imagenes/silla.jpg" width="201" height="201"></div>
+        <div class="column">sala</div>
+        <div class="column"><img src="imagenes/sala.jpg" width="179" height="180"></div>
+        <div class="column">sillones</div>
+        <div class="column"><img src="imagenes/sillon.jpg" width="248" height="182"></div>
+        <!-- Fila 2 -->
+        <div class="column">ropero</div>
+        <div class="column"><img src="imagenes/roperooo.jpg" width="189" height="189"></div>
+        <div class="column">muebles</div>
+        <div class="column"><img src="imagenes/muebles.jpg" width="259" height="199"></div>
+        <div class="column">mesa</div>
+        <div class="column"><img src="imagenes/mesa.jpg" width="201" height="201"></div>
+        <!-- Fila 3 -->
+        <div class="column">lamparas</div>
+        <div class="column"><img src="imagenes/lampara.jpg" width="219" height="219"></div>
+        <div class="column">cloro</div>
+        <div class="column"><img src="imagenes/cloro.jpg" width="187" height="186"></div>
+        <div class="column">pinol</div>
+        <div class="column"><img src="imagenes/pinol.jpg" width="231" height="205"></div>
+        <!-- Fila 4 -->
+        <div class="column">ariel</div>
+        <div class="column"><img src="imagenes/ariel.jpg" width="199" height="199"></div>
+        <div class="column">escoba</div>
+        <div class="column"><img src="imagenes/escoba.jpg" width="207" height="207"></div>
+        <div class="column">jabon</div>
+        <div class="column"><img src="imagenes/jabon.jpg" width="200" height="200"></div>
+        <!-- Fila 5 -->
+        <div class="column">esponja</div>
+        <div class="column"><img src="imagenes/esponja.jpg" width="242" height="181"></div>
+        <div class="column">brochas</div>
+        <div class="column"><img src="imagenes/brochas.jpg" width="205" height="205"></div>
+        <div class="column">tintes</div>
+        <div class="column"><img src="imagenes/tintes.jpg" width="120" height="120"></div>
+        <!-- Fila 6 -->
+        <div class="column">labiales</div>
+        <div class="column"><img src="imagenes/labiales.jpg" width="138" height="183"></div>
+        <div class="column">rubor</div>
+        <div class="column"><img src="imagenes/rubor.jpg" width="175" height="180"></div>
+        <div class="column">polvo</div>
+        <div class="column"><img src="imagenes/polvo.jpg" width="199" height="199"></div>
+    </div>
+
+    <!-- Recuadro con enlace a Walmart -->
+    <div class="container image-box">
+        <a href="https://www.walmart.com" target="_blank"><img src="imagenes/alala.jpg" width="302" height="612">
+        </a>
+    </div>
+
+    <!-- Texto al final -->
+    <div class="footer-text">TODO AL ALCANCE DE TUS MANOS</div>
+
+</body>
+</html>
